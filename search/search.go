@@ -12,7 +12,7 @@ func Run(searchTerm string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	results := make(chan *Results)
+	results := make(chan *Result)
 
 	var waitGroup sync.WaitGroup
 
